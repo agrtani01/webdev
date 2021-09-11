@@ -1,0 +1,135 @@
+<html>
+	<head>
+		
+		<link type="text/css" rel="stylesheet" href="main.css" />
+
+		<title > DIY</title>
+
+		<script>
+			function banner(){
+				var text = confirm("Did You Really Want to Click on My Banner?");
+				return text;
+			}
+
+			function answer(){
+				var radio = document.getElementsByName("trivia");
+				var selection = false;
+				var message = "";
+				for( var i = 0; i < radio.length; i++) {
+
+					if (radio[i].checked == true)
+						message = radio[i].value; 
+
+					if(radio[i].value == "You Did It!!!" && radio[i].checked == true) {
+						selection = true;
+					} //end if statement
+				} //end for loop
+				if(selection == true) {
+					message = message + "<b><p style='color:green'>Way To Go!!!</p></b>";
+				} else {
+					message = message + "<b><p style='color:red'>You Can Do It!</p></b>";
+				}
+				document.getElementById("response").innerHTML = message;
+			} //end function answer
+		</script>
+	
+		<style>
+
+		</style>
+
+	</head>
+	<body id="background">
+
+	
+
+		<header id="banner"> <center> <img width="150px" src="https://images.freeimages.com/images/large-previews/888/paper-boats-1244039.jpg" > </center> </header>
+
+	
+
+		<h1 style="color: magenta;"><u><i>Amazing DIY's</i></u></h1>	
+		<p style="font-size:120%;" class="intro">
+			You will <span class="wrap-text"><u>learn</u></span> to make crafts, here there will be steps and pictures to show you how to decorate and make things. You will have lots of <span class="wrap-text"><strong>fun</strong></span> creating what you want. You can make toys simple as a paper airplane or a boat. You can also try to <span class="wrap-text"><i>make</i></span> ooblek or slime. How about... a paper butterfly?
+		</p>
+
+		<h3 class="header"> You might make ... </h3>
+
+		<table border="0">
+		<tr>
+			<th>
+				
+			<div class="wrap-list">
+
+
+<a onclick="return banner()"href="https://web.roblox.com/account/signupredir">
+	
+	<h2>Click ⬇ </h2>
+
+</a>
+
+
+			<nav>
+
+				<ul id="navmenu">
+					<li class="navitem"> <a href="airplane.html"> Airplane </a> </li>
+					<li class="navitem"> <a href="boat.html"> Boat </a> </li>
+					<li class="navitem"> <a href="butterfly.html"> Butterfly </a> </li>
+					<li class="navitem"> <a href="ooblek.html"> Ooblek </a> </li>
+					<li class="navitem"> <a href="slime.html"> Slime </a> </li>
+			
+				</ul>
+
+			</nav>
+
+			</div>
+
+			</th>
+			<th>
+				<img width="40%" src="https://thumbs.dreamstime.com/b/cartoon-paper-airplane-logo-aircraft-made-paper-illustration-children-cartoon-paper-airplane-logo-aircraft-158421538.jpg" />
+			</th>
+			
+			<th>
+			<img width="50%" src="https://i.ytimg.com/vi/dsBK3UWhET8/maxresdefault.jpg" />	
+			</th>
+
+		</tr>
+		</table>
+	
+	<hr />
+
+	<hr />
+
+	<div class="wrap-trivia">
+		
+		<h1 class="header"> Trivia Question </h1>
+		<p class="color"> What 2 colors make orange? </p>
+		<form>
+			<div id="response"></div>
+			<input type="radio" name="trivia" value="Close..."> Blue + Red <br/>
+			<input type="radio" name="trivia" value="Try Agin.."> Green + Orange <br/>
+			<input type="radio" name="trivia" value="Not Quite.."> Pink + Purple <br/>
+			<input type="radio" name="trivia" value="You Did It!!!"> Red + Yellow<br/>
+			<input type="radio" name="trivia" value="Almost.."> Black + White <br/>
+			<input type="radio" name="trivia" value="That's Incorect.."> Teal + Gold <br/>
+
+			<input onclick="answer()" id="button" type="button" value="Are U Correct?">
+
+
+		</form>
+
+	</div>
+
+	<hr />
+
+	<center> Tanisha 2021</center>
+	<center> <a href="https://www.roblox.com/account/signupredir">Fun Games!</a></center>
+
+	<hr />
+
+
+	<footer id="footer"> Tanisha created this website.</footer>
+
+
+
+
+	</body>
+</html>
